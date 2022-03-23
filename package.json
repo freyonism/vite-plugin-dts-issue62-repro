@@ -1,0 +1,18 @@
+{
+  "name": "vite-plugin-dts-issue62-repro",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:lib": "rm -rf dist && vite build",
+    "build:lib-ignored": "rm -rf dist && vite build --config vite-ignored.config.ts",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.22",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vite-plugin-dts": "^1.0.1"
+  }
+}
